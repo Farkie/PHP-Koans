@@ -40,7 +40,7 @@ foreach($files as $file) {
 		 				case 'Failed asserting that two strings are equal.':
 		 					echo "Failed asserting that '".$result['trace'][0]['args'][1].
 		 						"' matches expected '".$result['trace'][0]['args'][0].
-		 						"' in file tests/test_".$file.'.php'.PHP_EOL.PHP_EOL;
+		 						"' in file tests/test_".$file.'.php on line '.$result['trace'][0]['line'].'.'.PHP_EOL.PHP_EOL;
 		 					break 2;
 		 				default:
 		 					echo substr($result['message'],0,strlen($result['message'])-1).

@@ -14,7 +14,7 @@ class test_strings extends PHPUnit_Framework_TestCase {
 	public function test_2() {
 		$a = 1;
 		$b = 2;
-		$this->assertEquals('str1', __);
+		$this->assertEquals('str1', $b+a);
 	}
 
 }
